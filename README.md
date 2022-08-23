@@ -6,5 +6,6 @@
 02-go web
 03-go 微服务
 04-go ddd
+05-go-kaleidoscope go万花筒
 ```
 
