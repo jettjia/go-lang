@@ -8,7 +8,7 @@ import (
 
 	"google.golang.org/grpc/metadata"
 
-	"test-google-micro-service/02-grpc/10-grpc-interceptor/proto"
+	"go-micro-frame-doc/03-grpc/10-grpc-interceptor/proto"
 )
 
 type Server struct {
