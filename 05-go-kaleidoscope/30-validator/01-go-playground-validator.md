@@ -375,6 +375,33 @@ validate.RegisterTagNameFunc(func(field reflect.StructField) string {
 
 
 
+
+
+# 常用校验
+
+```
+-  忽略
+|  或
+omitempty 有则验证，空值则不验证
+dive  潜入到切片、数组、映射中，例如 NumList []int `validate:"len=2,dive,gt=18"` //切片长度为2，潜入切片后，里面的成员必须大于18
+required 、 required_with[_all]、 required_without[_all]   //required_with表示指定字段有值，则本字段必须有值；required_without表示指定字段没有值时，本字段必须有值；指定字段有值，则本字段有值无值都可以。
+len  数字时等效于eq, 字符串时等效字符串长度(是rune长度，比如"世界"或"sj"都满足len=2的约束)，切片或映射的话是元素的个数
+max、min
+eq、ne、{l|g}t[e]
+oneof  例如 oneof=male female
+alpha alphanum numeric hexadecimal
+
+file  文件是否存在
+contains(包含某个字符) containsany(包含任意一个给定字符串中的字符)  containsrune  excludes excludesall(不包含给定字符串中的所有字符) excludesrune
+ip ipv4 ipv6 cidr cidrv{4|6} {tc|ud}p[{4|6}]_addr(就是多了端口号验证) fqdn eth_addr   可解析的IP地址(测试发现没觉得和ipv4、ipv6、ip标签有什么不同)：ip[{4|6}]_addr mac 
+email url uri base64 base64url(因为base64的+和/在url中有特殊意义)  uuid  uuid3 uuid4 uuid5
+
+startswith( 以什么开始)  endswith(以什么结束)   v9版本及其之后才能支持
+ascii asciiprint multibyte(多字节，比如汉字，注意：如果是空，校验也能通过)
+```
+
+
+
 # 结构体嵌套校验
 
 required,dive
