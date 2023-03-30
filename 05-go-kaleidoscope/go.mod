@@ -5,6 +5,7 @@ go 1.16
 require (
 	github.com/HdrHistogram/hdrhistogram-go v1.1.2 // indirect
 	github.com/alibaba/sentinel-golang v1.0.3
+	github.com/antlr/antlr4/runtime/Go/antlr/v4 v4.0.0-20230305170008-8188dc5388df // indirect
 	github.com/apache/rocketmq-client-go/v2 v2.1.0
 	github.com/envoyproxy/protoc-gen-validate v0.6.1
 	github.com/fsnotify/fsnotify v1.4.9
@@ -46,8 +47,8 @@ require (
 	github.com/xxl-job/xxl-job-executor-go v1.0.1
 	go.etcd.io/etcd v0.0.0-20191023171146-3cf2f69b5738
 	go.uber.org/zap v1.19.0
-	golang.org/x/net v0.0.0-20210805182204-aaa1db679c0d
-	golang.org/x/sys v0.0.0-20210823070655-63515b42dcdf // indirect
+	golang.org/x/exp v0.0.0-20230306221820-f0f767cdffd6 // indirect
+	golang.org/x/net v0.1.0
 	google.golang.org/genproto v0.0.0-20210909211513-a8c4777a87af
 	google.golang.org/grpc v1.40.0
 	google.golang.org/protobuf v1.27.1
