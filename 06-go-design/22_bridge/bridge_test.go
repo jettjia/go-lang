@@ -14,7 +14,6 @@ func ExampleCommonEmail() {
 	// send have a drink? to bob via Email
 }
 
-// 加急事件
 func ExampleUrgencySMS() {
 	m := NewUrgencyMessage(ViaSMS())
 	m.SendMessage("have a drink?", "bob")
