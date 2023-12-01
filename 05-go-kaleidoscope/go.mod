@@ -37,6 +37,7 @@ require (
 	github.com/nitishm/go-rejson/v4 v4.0.0
 	github.com/olivere/elastic/v7 v7.0.28
 	github.com/opentracing/opentracing-go v1.2.0
+	github.com/panjf2000/ants/v2 v2.9.0
 	github.com/rabbitmq/amqp091-go v0.0.0-20210823000215-c428a6150891
 	github.com/satori/go.uuid v1.2.0
 	github.com/spf13/viper v1.8.1
@@ -149,7 +150,7 @@ require (
 	go.uber.org/multierr v1.6.0 // indirect
 	golang.org/x/arch v0.3.0 // indirect
 	golang.org/x/crypto v0.12.0 // indirect
-	golang.org/x/sync v0.1.0 // indirect
+	golang.org/x/sync v0.3.0 // indirect
 	golang.org/x/sys v0.11.0 // indirect
 	golang.org/x/text v0.12.0 // indirect
 	gopkg.in/ini.v1 v1.62.0 // indirect
