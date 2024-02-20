@@ -116,6 +116,8 @@
 "datetime":             isDatetime, // 时间矫正,如 `validate:"datetime=2006-01-02"`
 ```
 
+![image-20231221151341228](01-go-playground-validator.assets/image-20231221151341228.png)
+
 # 二、简单的结构体验证
 
 ```go
